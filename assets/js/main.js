@@ -310,3 +310,29 @@
   new PureCounter();
 
 })()
+
+
+
+document.getElementById("submit-form").addEventListener("submit", function (e) {
+  e.preventDefault(); // Prevents the default form submission behavior
+  
+  var formData = new FormData(document.getElementById("submit-form"));
+  var xhr = new XMLHttpRequest();
+  
+  xhr.open("POST", "https://script.google.com/macros/s/AKfycbwS5MISit-FU1frO6pqYlsYKg0AZmLcVmag_9yLkHt8GHbTQy8cKe7GL1dOQZMwYgOH/exec", true);
+  
+  xhr.onload = function () {
+      if (xhr.status === 200) {
+          alert("Form submitted successfully");
+          window.location.reload();
+      } else {
+          alert("Something Error");
+      }
+  };
+  
+  xhr.onerror = function () {
+      alert("Something Error");
+  };
+  
+  xhr.send(formData);
+});
