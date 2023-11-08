@@ -1352,3 +1352,7 @@ section {
     padding-right: 20px 15px;
   }
 }
+
+.resume-list{
+  list-style: none;
+}
