@@ -17,6 +17,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
+  /* overflow: hidden; */
 }
 
 a {
@@ -410,10 +411,23 @@ section {
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
+
+
 .facts {
   padding-bottom: 30px;
-  justify-content: center;
+  /* justify-content: center; */
 }
+
+.cert{
+  display: flex;
+  justify-content: space-evenly;
+  /* margin-left: -31px;
+  margin-right: -51px; */
+}
+
+/* .cert-item-python{
+  margin-left: -48px;
+} */
 
 .facts-title {
   padding-bottom: 30px;
@@ -451,13 +465,8 @@ section {
   margin-left: -12px;
 }
 
-.flutter a{
-  margin-top: 1px;
-}
 
-.cert{
-  justify-content: center;
-}
+
 
 .facts .count-box {
   padding: 30px;
@@ -493,7 +502,7 @@ section {
   padding: 15px 0 0 0;
   margin: 0 0 0 60px;
   font-family: "Raleway", sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   color: #122f57;
 }
 
@@ -501,14 +510,17 @@ section {
   font-weight: 600;
   display: block;
   margin-top: 1px;
-  color: #122f57;
-  font-size: 15px;
+  /* color: #122f57; */
+  color: #1f5297;
+
+  font-size: 13px;
   font-family: "Poppins", sans-serif;
   transition: ease-in-out 0.3s;
 }
 
 .facts .count-box a:hover {
-  color: #1f5297;
+  /* color: #1f5297; */
+  color: blue;
 }
 
 /*--------------------------------------------------------------
@@ -1356,3 +1368,4 @@ section {
 .resume-list{
   list-style: none;
 }
+
